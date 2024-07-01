@@ -11,7 +11,19 @@ def main():
     elif num3 <= num1 and num3 <= num2:
         minval = num3
     
+    if (num1 >= num2 and num1 <= num3) or (num1 <= num2 and num1 >= num3):
+        median = num1
+    elif (num2 >= num1 and num2 <= num3) or (num2 <= num1 and num2 >= num3):
+        median = num2
+    elif (num3 >= num2 and num3 <= num1) or (num3 <= num2 and num3 >= num1):
+        median = num3
     
+    if num1 >= num2 and num1 >= num3:
+        maxval = num1
+    elif num2 >= num1 and num2 >= num3:
+        maxval = num2
+    elif num3 >= num1 and num3 >= num2:
+        maxval = num3
     ########################################
     
 
